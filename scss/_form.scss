@@ -1,0 +1,49 @@
+@import 'variables.scss';
+
+.form {
+    text-align: center;
+    height:600px;
+
+    div {
+        margin:auto;
+        width: $website-width - 20%;
+
+        h1 {
+            font-family: $oswald;
+            font-size: 30px;
+            text-align: left;
+            width:100%;
+        }
+
+        form {
+            width:100%;
+            text-align: left;
+
+            label {
+                margin: 10px 0 0 0;
+                padding:0;
+
+                .required {
+                    color: orange;
+                }
+            }
+
+            textarea {
+                height: 100px;
+            }
+            
+            button {
+                background-color: #bbb;
+                border: none;
+                margin: 10px 0;
+
+            }
+        }
+        
+        form * {
+            font-family: $oswald;
+            width:100%;
+            padding: $padding-input;
+        }
+    }
+}

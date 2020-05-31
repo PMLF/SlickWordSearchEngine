@@ -1,0 +1,54 @@
+@import 'variables.scss';
+
+.header {
+    width:$website-width;
+    margin: 4% auto 0 auto;
+    min-height:150px;
+
+    .title {
+        width:70%;
+        float:left;
+        text-transform: uppercase;
+        font-family: $oswald;
+    }
+
+    .search {
+        float:right;
+        width:30%;
+
+        .wrapper {
+            text-align:center;
+
+            .input-group {
+                width:100%;
+                float:right;
+                font-family: $oswald;
+
+                input {
+                    border: $simple-border;
+                    width:70%;
+                    min-width:100px;
+                    padding: $padding-input;
+                    border-radius: 10px 0 0 10px;
+                }
+
+                div {
+                    width:30%;
+
+                    button {
+                        width:100%;
+                        border: $simple-border;
+                        border-radius: 0 10px 10px 0;
+                        background-color: #bbb;
+                    }
+                }
+            }
+
+            .results {
+                margin:auto;
+                min-width:120px;
+                width:10%;
+            }
+        }
+    }
+}

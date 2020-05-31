@@ -1,0 +1,32 @@
+@import 'variables.scss';
+
+footer {
+    background-color: #555;
+    height:40px;
+    padding: 8px 0;
+
+    div {
+        float:right;
+        margin-right:10%;
+
+        p {
+            margin:0;
+            font-family: $oswald;
+            text-decoration: none;
+            color:white;
+
+            a {
+                color:rgb(100, 230, 255);
+            }
+
+            a:hover {
+                color:rgb(50, 180, 255);
+                text-decoration: none;
+            }
+
+            i {
+                color:white;
+            }
+        }
+    }
+}

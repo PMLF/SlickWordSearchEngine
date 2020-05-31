@@ -1,0 +1,22 @@
+@import 'variables.scss';
+
+.text {
+    text-align:center;
+
+    div {
+        margin:5% auto;
+        width: $website-width - 20%;
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+            font-size: 20px;
+            initial-letter: 2 2;
+            font-family: $oswald;
+        }
+        p::first-letter {
+            font-size: 50px;
+            margin-right: 5px;
+        }
+    }
+}

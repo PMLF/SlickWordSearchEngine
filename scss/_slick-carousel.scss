@@ -1,0 +1,32 @@
+@import 'variables.scss';
+
+.slick {
+    text-align:center;
+
+    .carousel {
+        width: $website-width;
+        margin:auto;
+        
+    }
+
+    .min {
+        margin:auto;
+        width: $website-width;
+        margin-bottom:150px;
+
+        .wrapper {
+            margin:auto;
+
+            div {
+                width:10%;
+                margin:5px 5px 5px 0;
+                float:left;
+
+                img {
+                    width:100%;
+                    
+                }
+            }
+        }
+    }
+}
