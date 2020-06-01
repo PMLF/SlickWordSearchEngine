@@ -5,8 +5,14 @@
 
     .carousel {
         width: $website-width;
-        margin:auto;
+        margin:auto;        
         
+        .slick-prev:before {
+            color: #ccc;
+        }
+        .slick-next:before {
+            color: #ccc;
+        }
     }
 
     .min {

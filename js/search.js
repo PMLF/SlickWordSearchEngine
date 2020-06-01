@@ -1,15 +1,35 @@
 /**
- * Searches and highlights the text that matches the search words inserted.
- * Shows error message if the inserted text is invalid.
+ * Triggers the initiation of the search process by clicking the search button.
  */
 $(".search-btn").click(function() {
+    initSearch();
+});
+
+/**
+ * Triggers the initiation of the search process by pressing enter inside the text input element.
+ */
+$('.search-text').bind("enterKey",function(e){
+    initSearch();
+ });
+ $('.search-text').keyup(function(e){
+     if(e.keyCode == 13)
+     {
+         $(this).trigger("enterKey");
+     }
+ });
+
+/**
+ * Initiates the process of searching for a specific text.
+ * Shows error message if the inserted text is invalid.
+ */
+function initSearch() {
     if (validateSearch()) {
         search(document.querySelector(".search-text").value);
     }
     else {
         alert("Invalid search, insert a minimum of 3 characters.");
     }
-});
+}
 
 /**
  * Performs the search of a string determined by the user in
