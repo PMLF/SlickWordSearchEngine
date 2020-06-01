@@ -77,8 +77,12 @@ function search(toFind) {
 function performSearchInElement(container, text) {
     let occurs = 0;
     if(container.innerHTML.indexOf(text) !== -1){
-        container.innerHTML = container.innerHTML.replace(text, getRedText(text));
-        occurs++;
+        textRegex = new RegExp(text,"g");
+        container.innerHTML = container.innerHTML.replace(textRegex, function(e)
+            {
+                occurs++;
+                return getRedText(text);
+            });
     }
     return occurs;
 }
