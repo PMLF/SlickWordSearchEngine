@@ -138,6 +138,11 @@ body {
   background-color: red;
   border-radius: 10px; }
 
+.old-search {
+  color: black;
+  background-color: #ddd;
+  border-radius: 10px; }
+
 .hide {
   display: none; }
 

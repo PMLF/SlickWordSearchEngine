@@ -38,6 +38,8 @@ function initSearch() {
  * @param {string} toFind String value to find in the page.
  */
 function search(toFind) {
+    previousSearchesToGray();
+
     let occursCount = 0;
     let textContainers = [
                         ".text div p",
@@ -92,6 +94,11 @@ function getRedText(content) {
     let closeTag = '</span>';
 
     return openTag + content + closeTag;
+}
+
+function previousSearchesToGray() {
+    $('.red').addClass("old-search");
+    $('.red').removeClass("red");
 }
 
 /**
